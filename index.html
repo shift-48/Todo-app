@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="./assets/CSS/main.css" />
 		<link
 			rel="shortcut icon"
-			href="./assets/images/favicon-32x32.png"
+			href="images/favicon-32x32.png"
 			type="image/x-icon"
 		/>
 		<link
@@ -22,15 +22,33 @@
 	<body>
 		<div class="container">
 			<div id="main-box">
-				<h1>todo</h1>
-				<img src="./assets/images/icon-sun.svg" alt="" />
+				<div id="head">
+					<h1>todo</h1>
+					
+					<img src="images/icon-moon.svg" id="night" alt="" />
+					<img src="images/icon-sun.svg" id="day" alt="" />
+				</div>
 				<form action="">
-					<input type="text" />
-					<button>click here</button>
+					<input
+						type="text"
+						required="required"
+						id="bar"
+						placeholder="enter todo"
+					/>
 				</form>
 				<div id="todos"></div>
+				<div id="foot">
+					<div id="div1">
+						<p><span>0</span>items left</p>
+					</div>
+					<div id="div2">
+						<p>all</p>
+						<p>active</p>
+						<p>completed</p>
+					</div>
+					<div id="div3"><p>clear completed</p></div>
+				</div>
 			</div>
-			<div id="count" style="font-size: 30px; color: red;">0</div>
 		</div>
 		<script src="assets/script.js"></script>
 	</body>

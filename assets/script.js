@@ -1,9 +1,6 @@
 const input = document.querySelector("input");
-const todoIems = document.querySelector("#todoIems");
-const btn = document.querySelector("button");
 const form = document.querySelector("form");
 let inputText = input.value;
-let total = 0 ;
 
 
 form.addEventListener("submit", (event) => {
@@ -20,9 +17,15 @@ form.addEventListener("submit", (event) => {
 
 function createDiv() {
 	let todoItem = document.createElement("div");
-	todoItem.classList.add("todoclass");
+	todoItem.classList.add("todoItem");
 	todos.appendChild(todoItem);
+    todoItem.setAttribute('draggable',"true");
+    console.log(todoItem)
+    todoItem.classList.add('boxClass')
     todoItem.innerText = input.value;
+    if(inputText == null){
+        console.log('hii')
+    }
 
     todoItem.addEventListener('click',()=>{
        
