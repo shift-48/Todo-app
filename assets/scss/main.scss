@@ -32,6 +32,7 @@
             #bar{
                 border: none;
                 padding: 8px;
+                border: 2px solid inherit;
                 
                 // background-color: hsl(235, 24%, 19%);
                 // background-color: inherit;
@@ -42,7 +43,7 @@
                 
 
                     &::placeholder{
-                        color: gray;
+                        color: inherit;
                     }
             }
         }
@@ -81,7 +82,7 @@
 }
 .strikethrough{
     text-decoration: line-through;
-    color: rgba(1, 1,1, 0.5);
+    color: rgba(1, 1,1, 0.5)!important;
 }
 
 .boxClass{
@@ -118,6 +119,7 @@
         }
         & .todoItem{
             background-color:  hsl(233, 11%, 84%);
+            font-weight: 500;
         }
         & *{
             color: black;
@@ -143,6 +145,7 @@
         }
         & .todoItem{
             background-color:  hsl(235, 24%, 19%);
+            font-weight: 500;
         }
         & *{
             color: white;

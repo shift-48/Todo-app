@@ -30,18 +30,19 @@
 #main-box form #bar {
   border: none;
   padding: 8px;
+  border: 2px solid inherit;
   outline: none;
   width: 100%;
   font-size: 20px;
 }
 #main-box form #bar::-moz-placeholder {
-  color: gray;
+  color: inherit;
 }
 #main-box form #bar:-ms-input-placeholder {
-  color: gray;
+  color: inherit;
 }
 #main-box form #bar::placeholder {
-  color: gray;
+  color: inherit;
 }
 
 #head {
@@ -65,7 +66,7 @@
 
 .strikethrough {
   text-decoration: line-through;
-  color: rgba(1, 1, 1, 0.5);
+  color: rgba(1, 1, 1, 0.5) !important;
 }
 
 .boxClass {
@@ -99,6 +100,7 @@
 }
 .day .todoItem {
   background-color: hsl(233deg, 11%, 84%);
+  font-weight: 500;
 }
 .day * {
   color: black;
@@ -115,6 +117,7 @@
 }
 .night .todoItem {
   background-color: hsl(235deg, 24%, 19%);
+  font-weight: 500;
 }
 .night * {
   color: white;

@@ -7,8 +7,7 @@ let total = 0;
 let words = [];
 // document.querySelector('#night').style.display = 'none'
 
-
-container.classList.add('night')
+container.classList.add("night");
 form.addEventListener("submit", (event) => {
 	event.preventDefault();
 	createDiv();
@@ -48,6 +47,7 @@ function createDiv() {
 		todoItem.classList.add("strikethrough");
 		let hasStrike = todoItem.classList.contains("strikethrough");
 		if (hasStrike) {
+			words.del(hasStrike)
 		}
 	});
 }
@@ -73,6 +73,9 @@ function daynNight() {
 		nightbtn.style.display = "none";
 	});
 }
+
+daynNight();
+
 // function night(params) {
 // 	let nightbtn = document.querySelector("#night");
 // 	nightbtn.addEventListener("click", () => {
