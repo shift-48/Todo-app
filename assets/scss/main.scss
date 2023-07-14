@@ -6,6 +6,7 @@
 	margin: 0;
 	text-transform: capitalize;
 	font-family: "Roboto", sans-serif;
+    font-weight: 500;
     // outline: solid 1px red;
     // color: white;
 }
@@ -67,7 +68,7 @@
 .todoItem{
     width:100%;
     height: 30px;
-    background-color: hsl(235, 24%, 19%);
+    // background-color: hsl(235, 24%, 19%);
     // background-color: transparent;
     // color: white;
     margin: 15px 0 ;
@@ -112,7 +113,18 @@
         & #todos{
             box-shadow: 5px 5px 10px hsl(233, 11%, 84%);
         }
+        & #bar{
+            background-color: hsl(0, 0%, 98%);
+        }
+        & .todoItem{
+            background-color:  hsl(233, 11%, 84%);
+        }
+        & *{
+            color: black;
+        }
 }
+        
+
 
 // .day #todos{
 //     box-shadow: 5px 5px 10px hsl(233, 11%, 84%);
@@ -128,5 +140,11 @@
         }
         & #bar{
             background-color: hsl(235, 24%, 19%);
+        }
+        & .todoItem{
+            background-color:  hsl(235, 24%, 19%);
+        }
+        & *{
+            color: white;
         }
 }
