@@ -6,7 +6,7 @@
 	margin: 0;
 	text-transform: capitalize;
 	font-family: "Roboto", sans-serif;
-    outline: solid 1px red;
+    // outline: solid 1px red;
     // color: white;
 }
 ::html {
@@ -17,7 +17,7 @@
     border: 5px solid gold;
 	min-height: 100vh;
 	min-width: 100%;
-	background: url(../images/bg-desktop-dark.jpg) no-repeat hsl(235, 21%, 11%);
+	// background: url(../images/bg-desktop-dark.jpg) no-repeat hsl(235, 21%, 11%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -31,11 +31,15 @@
             #bar{
                 border: none;
                 padding: 8px;
-                background-color: hsl(235, 24%, 19%);
+                
+                // background-color: hsl(235, 24%, 19%);
+                // background-color: inherit;
                 outline: none;
                 // color: white;
                 width: 100%;
                 font-size: 20px;
+                
+
                     &::placeholder{
                         color: gray;
                     }
@@ -105,9 +109,24 @@
 
 .day{
     background:url(../images/bg-desktop-light.jpg) no-repeat hsl(0, 0%, 98%);
-    
+        & #todos{
+            box-shadow: 5px 5px 10px hsl(233, 11%, 84%);
+        }
 }
+
+// .day #todos{
+//     box-shadow: 5px 5px 10px hsl(233, 11%, 84%);
+// }
+// .day #bar{
+//     background-color: white;
+// }
+
 .night{
     background: url(../images/bg-desktop-dark.jpg) no-repeat hsl(235, 21%, 11%);
-    
+        & #todos{
+            box-shadow: 3px 5px 9px  hsl(235, 24%, 19%);
+        }
+        & #bar{
+            background-color: hsl(235, 24%, 19%);
+        }
 }

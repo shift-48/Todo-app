@@ -5,7 +5,6 @@
   margin: 0;
   text-transform: capitalize;
   font-family: "Roboto", sans-serif;
-  outline: solid 1px red;
 }
 
 ::html {
@@ -16,7 +15,6 @@
   border: 5px solid gold;
   min-height: 100vh;
   min-width: 100%;
-  background: url(../images/bg-desktop-dark.jpg) no-repeat hsl(235deg, 21%, 11%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +29,6 @@
 #main-box form #bar {
   border: none;
   padding: 8px;
-  background-color: hsl(235deg, 24%, 19%);
   outline: none;
   width: 100%;
   font-size: 20px;
@@ -94,7 +91,16 @@
 .day {
   background: url(../images/bg-desktop-light.jpg) no-repeat hsl(0deg, 0%, 98%);
 }
+.day #todos {
+  box-shadow: 5px 5px 10px hsl(233deg, 11%, 84%);
+}
 
 .night {
   background: url(../images/bg-desktop-dark.jpg) no-repeat hsl(235deg, 21%, 11%);
+}
+.night #todos {
+  box-shadow: 3px 5px 9px hsl(235deg, 24%, 19%);
+}
+.night #bar {
+  background-color: hsl(235deg, 24%, 19%);
 }/*# sourceMappingURL=main.css.map */
